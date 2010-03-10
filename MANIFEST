@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Tkx-SplashScreen.t
+lib/Tkx/SplashScreen.pm
