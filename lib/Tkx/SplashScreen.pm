@@ -1,11 +1,11 @@
 package Tkx::SplashScreen;
 
+use version; our $VERSION = qv('0.1.2');
+
 use strict;
 use Tkx ();
 
 use base qw(Tkx::widget Tkx::MegaConfig);
-
-our $VERSION = '0.11';
 
 __PACKAGE__->_Mega('tkx_SplashScreen');
 __PACKAGE__->_Config();
@@ -78,7 +78,12 @@ sub _obj_init {
     
     # Alpha channel
     if ($data->{-alpha}) {
-        $self->g_wm_attributes(-alpha => $data->{-alpha});
+        if (Tkx::tk_windowingsystem() eq 'win32') {
+            $self->g_wm_attributes(-alpha => $data->{-alpha});
+        }
+        else {
+            # TODO: 
+        }
     }
     
     
@@ -142,7 +147,7 @@ sub _obj_init {
     my $canvas = $data->{canvas} = $self->new_canvas(
         -width              => $width,
         -height             => $height,
-        -highlightthickness => 0
+        -highlightthickness => 0,
     );
 
     $canvas->g_pack();
@@ -266,21 +271,44 @@ The options bellow are passed through the constructor of megawidget.
 
 =head2 C<-image =E<gt> I<image>>
 
+Background image.
+
 =head2 C<-width =E<gt> I<width>>
+
+Width. Default is 400.
 
 =head2 C<-height =E<gt> I<height>>
 
+Height. Default is 300.
+
 =head2 C<-posx =E<gt> I<x>>
+
+Position X of top left corner.
+By default window fits center the screen.
 
 =head2 C<-posy =E<gt> I<y>>
 
+Position Y of top left corner.
+By default window fits center the screen.
+
 =head2 C<-delay =E<gt> I<ms>>
+
+Delay in milliseconds after window will be hidden.
 
 =head2 C<-alpha =E<gt> I<level>>
 
+Alpha transparency level of the window (only win32).
+Default is 1.0
+
 =head2 C<-override =E<gt> I<overrideredirect>>
 
+Override redirect flag. Enable by default.
+
 =head2 C<-show =E<gt> I<show>>
+
+Show splash screen after construction.
+
+=head2 C<-hideonclick =E<gt> I<hideonclick>>
 
 
 =head1 METHODS
@@ -323,7 +351,7 @@ Alexander Nusov <santeri@cpan.org>
 
 =head1 COPYRIGHTS AND LICENSE
 
-Copyright (C) 2009-2010, Alexander Nusov
+Copyright (C) 2009-2010 Alexander Nusov
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

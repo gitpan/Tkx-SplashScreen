@@ -1,4 +1,3 @@
-use 5.010001;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
@@ -13,5 +12,5 @@ WriteMakefile(
       (ABSTRACT_FROM  => 'lib/Tkx/SplashScreen.pm',
        AUTHOR         => 'Alexander Nusov <santeri@cpan.org>') : ()),
        
-	'dist' => { COMPRESS=>"gzip", SUFFIX=>"gz" },
+	'dist' => { COMPRESS => "gzip", SUFFIX => "gz" },
 );
