@@ -1,6 +1,6 @@
 package Tkx::SplashScreen;
 
-use version; our $VERSION = qv('0.1.2');
+use version; our $VERSION = qv('v0.1.2');
 
 use strict;
 use Tkx ();
