@@ -5,7 +5,7 @@ use Tkx ();
 
 use base qw(Tkx::widget Tkx::MegaConfig);
 
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 __PACKAGE__->_Mega('tkx_SplashScreen');
 __PACKAGE__->_Config();

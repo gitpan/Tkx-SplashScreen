@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Tkx-SplashScreen
-version:            0.12
+version:            0.13
 abstract:           splashscreen megawidget for Tkx.
 author:
     - Alexander Nusov <santeri@cpan.org>
