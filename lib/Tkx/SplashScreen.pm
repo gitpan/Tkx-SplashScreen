@@ -1,11 +1,11 @@
 package Tkx::SplashScreen;
 
-use version; our $VERSION = qv('0.1');
-
 use strict;
 use Tkx ();
 
 use base qw(Tkx::widget Tkx::MegaConfig);
+
+our $VERSION = '0.11';
 
 __PACKAGE__->_Mega('tkx_SplashScreen');
 __PACKAGE__->_Config();
@@ -225,7 +225,7 @@ Tkx::SplashScreen - splashscreen megawidget for Tkx.
 
 =head1 VERSION
 
-This documentation referers to Tkx::SplashScreen version 0.1
+This documentation referers to Tkx::SplashScreen version 0.11
 
 =head1 SYNOPSYS
 

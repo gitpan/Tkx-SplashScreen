@@ -1,5 +1,8 @@
 Revision history for Perl extension Tkx::SplashScreen.
 
+0.11 Wed Mar 10 21:44:15 2010
+    - Updated
+
 0.1  Wed Mar 10 20:29:41 2010
 	- original version; created by h2xs 1.23 with options
 		-AX -n Tkx::SplashScreen -v 0.1
