@@ -1,7 +1,7 @@
 Changes
-Makefile.PL
 MANIFEST
+Makefile.PL
 README
-t/Tkx-SplashScreen.t
 lib/Tkx/SplashScreen.pm
+t/00-Tkx-SplashScreen.t
 META.yml                                 Module meta-data (added by MakeMaker)

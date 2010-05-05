@@ -1,22 +1,22 @@
 --- #YAML:1.0
 name:               Tkx-SplashScreen
-version:            0.13
+version:            0.14
 abstract:           splashscreen megawidget for Tkx.
 author:
-    - Alexander Nusov <santeri@cpan.org>
-license:            unknown
+    - Alexander Nusov <cpan@sancode.net>
+license:            perl
 distribution_type:  module
 configure_requires:
     ExtUtils::MakeMaker:  0
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Tkx:  0
+    Test::More:  0
 no_index:
     directory:
         - t
         - inc
-generated_by:       ExtUtils::MakeMaker version 6.56
+generated_by:       ExtUtils::MakeMaker version 6.55_02
 meta-spec:
     url:      http://module-build.sourceforge.net/META-spec-v1.4.html
     version:  1.4

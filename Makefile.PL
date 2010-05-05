@@ -1,16 +1,19 @@
+use strict;
+use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME              => 'Tkx::SplashScreen',
-    VERSION_FROM      => 'lib/Tkx/SplashScreen.pm',
-    INSTALLDIRS       => 'site',
-    PREREQ_PM         => {
-        'Tkx' => 0,
+    NAME                => 'Tkx::SplashScreen',
+    AUTHOR              => q{Alexander Nusov <cpan@sancode.net>},
+    VERSION_FROM        => 'lib/Tkx/SplashScreen.pm',
+    ABSTRACT_FROM       => 'lib/Tkx/SplashScreen.pm',
+    ($ExtUtils::MakeMaker::VERSION >= 6.3002
+      ? ('LICENSE'=> 'perl')
+      : ()),
+    PL_FILES            => {},
+    PREREQ_PM => {
+        'Test::More' => 0,
     },
-
-    ($] >= 5.005 ? 
-      (ABSTRACT_FROM  => 'lib/Tkx/SplashScreen.pm',
-       AUTHOR         => 'Alexander Nusov <santeri@cpan.org>') : ()),
-       
-	'dist' => { COMPRESS => "gzip", SUFFIX => "gz" },
+    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    clean               => { FILES => 'Tkx-SplashScreen-*' },
 );

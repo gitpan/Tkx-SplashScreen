@@ -1,4 +1,4 @@
-Tkx-SplashScreen version 0.13
+Tkx-SplashScreen version 0.14
 ================================
 
 Tkx::SplashScreen is a megawidget that describes an image that
@@ -19,12 +19,9 @@ This module requires these other modules and libraries:
 
   Tkx
 
-COPYRIGHT AND LICENCE
+LICENSE AND COPYRIGHT
 
-Alexander Nusov <santeri@cpan.org>
-
-Copyright (C) 2009-2010 Alexander Nusov
+Copyright (C) 2009-2010 Alexander Nusov <cpan at sancode.net>
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.10.1 or,
-at your option, any later version of Perl 5 you may have available.
+it under the same terms as Perl itself.
