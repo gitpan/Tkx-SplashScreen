@@ -3,7 +3,7 @@ package Tkx::SplashScreen;
 use strict;
 use warnings;
 
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 use Tkx;
 use base qw(Tkx::widget Tkx::MegaConfig);
@@ -217,7 +217,7 @@ Tkx::SplashScreen - splashscreen megawidget for Tkx.
 
 =head1 VERSION
 
-This documentation referers to Tkx::SplashScreen version 0.14
+This documentation referers to Tkx::SplashScreen version 0.15
 
 =head1 SYNOPSYS
 
