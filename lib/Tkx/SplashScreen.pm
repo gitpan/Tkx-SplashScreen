@@ -3,7 +3,7 @@ package Tkx::SplashScreen;
 use strict;
 use warnings;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 use Tkx;
 use base qw(Tkx::widget Tkx::MegaConfig);
@@ -217,9 +217,9 @@ Tkx::SplashScreen - splashscreen megawidget for Tkx.
 
 =head1 VERSION
 
-This documentation referers to Tkx::SplashScreen version 0.15
+This documentation referers to Tkx::SplashScreen version 0.16
 
-=head1 SYNOPSYS
+=head1 SYNOPSIS
 
     use Tkx;
     use Tkx::SplashScreen;
@@ -337,7 +337,7 @@ You can find documentation for this module with the perldoc command.
 
 =head1 AUTHOR
 
-Alexander Nusov <cpan at sancode.net>
+Alexander Nusov <alexander.nusov+cpan <at> gmail.com>
 
 =head1 COPYRIGHTS AND LICENSE
 

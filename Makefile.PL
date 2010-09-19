@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'Tkx::SplashScreen',
-    AUTHOR              => q{Alexander Nusov <cpan@sancode.net>},
+    AUTHOR              => q{Alexander Nusov <alexander.nusov+cpan@gmail.com>},
     VERSION_FROM        => 'lib/Tkx/SplashScreen.pm',
     ABSTRACT_FROM       => 'lib/Tkx/SplashScreen.pm',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002
